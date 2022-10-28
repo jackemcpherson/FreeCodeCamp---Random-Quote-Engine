@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/291e723641.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>FreeCodeCamp - Random Quote Generator</title>
 </head>
+
 <body>
-    <div class="quotebox">
-        <h1 class="quote"></h1>
+    <div id="wrapper">
+        <div id="quote-box">
+            <h1 class="quote-text"></h1>
+            <h2 class="quote-author"></h2>
+            <div class="buttons">
+                <a class="button" id="tweet-quote" title="Tweet Quote" target="_top"><i
+                        class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="button" id="new-quote" title="New Quote" target="_top"><i
+                        class="fa-solid fa-arrows-rotate"></i>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 <script>
-    $(document).ready(function(){
-        $(".quote").text('"I fully realize that no wealth or position can long endure, unless built upon truth and justice, therefore, I will engage in no transaction which does not benefit all whom it affects." - Napoleon Hill');
-
-}); 
+    $(document).ready(function () {
+        $.ajax({
+            url: "https://api.quotable.io/random",
+            type: "GET",
+            success: function (result) {
+                quoteStr = '"' + result["content"] + '"';
+                authorStr = result["author"]
+                $(".quote-text").text(quoteStr);
+                $(".quote-author").text(authorStr);
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+    }); 
 </script>
+
 </html>
