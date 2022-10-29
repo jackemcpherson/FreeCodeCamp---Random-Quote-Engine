@@ -1,7 +1,7 @@
 body {
-    background-color: lightblue;
-    color: darkblue;
-    font-family: baskerville;
+  background-color: lightblue;
+  color: darkblue;
+  font-family: baskerville;
 }
 
 #wrapper {
@@ -13,54 +13,54 @@ body {
 }
 
 #quote-box {
-    border: 6px solid darkblue;
-    border-radius: 3px;
-    filter: drop-shadow(10px 10px 4px darkblue);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 450px;
-    padding: 40px 50px;
-    display: table;
-    background-color: white;
+  border: 6px solid darkblue;
+  border-radius: 3px;
+  filter: drop-shadow(10px 10px 4px darkblue);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 450px;
+  padding: 40px 50px;
+  display: table;
+  background-color: white;
 }
 
 .quote-author {
-    text-align: right;
-    text-decoration: underline;
+  text-align: right;
+  text-decoration: underline;
 }
 
 #quote-box .buttons {
-    width: 450px;
-    margin: auto;
-    display: block;
-  }
+  width: 450px;
+  margin: auto;
+  display: block;
+}
 
-  #quote-box .buttons .button {
-    height: 38px;
-    border: none;
-    border-radius: 3px;
-    color: white;
-    background-color: darkblue;
-    outline: none;
-    padding: 8px 18px 6px 18px;
-    margin-top: 30px;
-  }
+#quote-box .buttons .button {
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: darkblue;
+  outline: none;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+}
 
-  #quote-box .buttons .button:hover {
-    opacity: 0.8;
-  }
+#quote-box .buttons .button:hover {
+  opacity: 0.8;
+}
 
-  #quote-box .buttons .button#tweet-quote,
-  #quote-box .buttons .button#new-quote {
-    float: left;
-    padding: 0px;
-    padding-top: 8px;
-    text-align: center;
-    font-size: 1.2em;
-    margin-right: 5px;
-    height: 30px;
-    width: 40px;
-  }
+#quote-box .buttons .button#tweet-quote,
+#quote-box .buttons .button#new-quote {
+  float: left;
+  padding: 0px;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 5px;
+  height: 30px;
+  width: 40px;
+}
