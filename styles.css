@@ -2,17 +2,25 @@ body {
     background-color: lightblue;
     color: darkblue;
     font-family: baskerville;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #quote-box {
     border: 6px solid darkblue;
     border-radius: 3px;
     filter: drop-shadow(10px 10px 4px darkblue);
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 450px;
     padding: 40px 50px;
     display: table;
