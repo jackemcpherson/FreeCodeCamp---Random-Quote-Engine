@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/291e723641.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>FreeCodeCamp - Random Quote Generator</title>
@@ -27,22 +29,4 @@
         </div>
     </div>
 </body>
-<script>
-    $(document).ready(function () {
-        $.ajax({
-            url: "https://api.quotable.io/random",
-            type: "GET",
-            success: function (result) {
-                quoteStr = '"' + result["content"] + '"';
-                authorStr = result["author"]
-                $(".quote-text").text(quoteStr);
-                $(".quote-author").text(authorStr);
-            },
-            error: function (error) {
-                console.log(error);
-            }
-        });
-    }); 
-</script>
-
 </html>
