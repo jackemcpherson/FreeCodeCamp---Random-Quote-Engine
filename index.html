@@ -2,29 +2,49 @@
 <html lang="en">
 
 <head>
+    <!-- Meta information -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script src="script.js"></script>
+
+    <!-- Custom JavaScript (deferred) -->
+    <script src="script.js" defer></script>
+
+    <!-- FontAwesome Icons -->
     <script src="https://kit.fontawesome.com/291e723641.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Page Title -->
     <title>FreeCodeCamp - Random Quote Generator</title>
 </head>
 
 <body>
+    <!-- Main Wrapper -->
     <div id="wrapper">
+        <!-- Quote Box -->
         <div id="quote-box">
+            <!-- Quote Text -->
             <h1 class="quote-text" id="text"></h1>
+            <!-- Quote Author -->
             <h2 class="quote-author" id="author"></h2>
+
+            <!-- Buttons Container -->
             <div class="buttons">
-                <a class="button" id="tweet-quote" title="Tweet Quote" target="_blank"><i
-                        class="fa-brands fa-twitter"></i>
+                <!-- Tweet Button -->
+                <a class="button" id="tweet-quote" title="Tweet Quote" target="_blank" aria-label="Tweet Quote">
+                    <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a class="button" id="new-quote" title="New Quote" target="_top"><i
-                        class="fa-solid fa-arrows-rotate"></i>
+
+                <!-- New Quote Button -->
+                <a class="button" id="new-quote" title="New Quote" target="_top" aria-label="New Quote">
+                    <i class="fa-solid fa-arrows-rotate"></i>
                 </a>
             </div>
         </div>
