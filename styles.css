@@ -9,7 +9,7 @@
 body {
   background-color: var(--main-bg-color);
   color: var(--text-color);
-  font-family: baskerville;
+  font-family: Baskerville, Georgia, "Times New Roman", Palatino, "Bookman Old Style", Garamond, serif;
 }
 
 /* Centering */
@@ -52,11 +52,12 @@ body {
   background-color: var(--btn-bg-color);
   outline: none;
   padding: 8px 18px 6px 18px;
-  margin-top: 30px;
+  margin: 0 5px;
 }
 
 .button:hover {
   opacity: 0.8;
+  background-color: navy;
 }
 
 /* Specific Button */
@@ -66,7 +67,7 @@ body {
   padding-top: 8px;
   text-align: center;
   font-size: 1em;
-  margin-right: 5px;
-  height: 30px;
-  width: 40px;
+  margin: 0 15px;
+  height: 40px;
+  width: 50px;
 }
